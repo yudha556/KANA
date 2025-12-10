@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --header: #FFFFFF;
+  --background: #F9FBFB;
+  --primary: #4EC0E6;
+  --secondary: #95D9F0;
+  --redAlert: #FEF2F2;
+  --greenAlert: #DCFCE7;
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-header: var(--header);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-redAlert: var(--redAlert);
+  --color-greenAlert: var(--greenAlert);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+} */
+/* 
+body {
+  background: var(--background);
+  color: var(--header);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+@keyframes spin-reverse-1 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow-left-1 {
+  animation: spin-reverse-1 3s linear infinite;
+}
+
+@keyframes animasi-besar-kecil {
+  0% {
+    transform: scale(0.8); 
+  }
+  50% {
+    transform: scale(1.2); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animasi-besar-kecil {
+  animation: animasi-besar-kecil 2s infinite alternate ease-in-out;
+}
+
+
+@keyframes animasi-naik-turun {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.animasi-naik-turun {
+  animation: animasi-naik-turun 1s infinite alternate;
+}
+
+@keyframes animasi-kanan-spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scrollbar-modern::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-modern::-webkit-scrollbar-track {
+  background: rgba(229, 231, 235, 0.3);
+  border-radius: 4px;
+}
+
+.scrollbar-modern::-webkit-scrollbar-thumb {
+  background-color: rgba(154, 154, 154, 0.6); 
+  border-radius: 4px;
+  border: 2px solid rgba(229, 231, 235, 0.3); 
+  backdrop-filter: blur(4px);
+}
+
+.scrollbar-modern::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(173, 173, 173, 0.8);
+}
+
