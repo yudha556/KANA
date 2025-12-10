@@ -1,0 +1,18 @@
+{
+  "name": "company-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=web-app",
+    "dev:admin": "npm run dev --workspace=web-admin",
+    "dev": "npm run dev:web & npm run dev:admin",
+    "build:web": "npm run build --workspace=web-app",
+    "build:admin": "npm run build --workspace=web-admin"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.0.0"
+  }
+}
