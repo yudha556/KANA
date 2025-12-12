@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import StudentList from "./components/studentList";
 import AddStudentModal from "./components/addStudentModal";
 import { useState } from "react";
-import { useStudents } from "./hook/useStudent.hooks";
+import { useStudents } from "./hooks/useStudent.hooks";
 
 export default function ManageStudent() {
   const router = useRouter();
